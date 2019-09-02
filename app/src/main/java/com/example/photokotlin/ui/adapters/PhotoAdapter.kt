@@ -47,7 +47,7 @@ class PhotoAdapter() : RecyclerView.Adapter<PhotoAdapter.MyViewHolder>() {
 
                 MyImageLoader.with(itemView.iv_news_newsImage.getContext()).load(itemView.iv_news_newsImage, itemView.post_progress, photoUrl)
             }
-            itemView.tv_news_title.setText(photoTitle)
+            itemView.tv_news_title.text = photoTitle
 
         }
     }
